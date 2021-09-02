@@ -44,14 +44,7 @@ try {
         case "logIn":
             // jwt 유효성 검사
             http_response_code(200);
-<<<<<<< HEAD
-<<<<<<< HEAD
 
-=======
->>>>>>> 192fe8be3d89930e0347f92a86187b1a0f7b82ac
-=======
-
->>>>>>> 5e5d52175e56436b9844242ba6186ada7f331795
             if(!isValidUser($req->id, $req->pw)){
                 $res->isSuccess = FALSE;
                 $res->code = 201;
