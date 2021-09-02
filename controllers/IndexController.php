@@ -22,10 +22,9 @@ try {
             getLogs("./logs/errors.log");
             break;
 
-<<<<<<< HEAD
+
         /*
          * API No. 0
-<<<<<<< HEAD
          * API Name : 테스트 API
          * 마지막 수정 날짜 : 20.08.16
          */
@@ -36,13 +35,10 @@ try {
             $res->isSuccess = TRUE;
             $res->code = 100;
             $res->message = "조회 성공";
-=======
          * API Name : 회원가입 API
          * 마지막 수정 날짜 : 20.09.01
          */
 
-=======
->>>>>>> 5e5d52175e56436b9844242ba6186ada7f331795
         case "createUser":
             http_response_code(200);
 
@@ -144,10 +140,7 @@ try {
             deleteUser($userEmail);
             $res->isSuccess = TRUE;
             $res->code = 100;
-<<<<<<< HEAD
             $res->message = "회원탈퇴 성공";
->>>>>>> 192fe8be3d89930e0347f92a86187b1a0f7b82ac
-=======
             $res->message = "성공";
             echo json_encode($res, JSON_NUMERIC_CHECK);
             break;
@@ -223,18 +216,9 @@ try {
             $res->isSuccess = TRUE;
             $res->code = 100;
             $res->message = "성공";
->>>>>>> 5e5d52175e56436b9844242ba6186ada7f331795
             echo json_encode($res, JSON_NUMERIC_CHECK);
             break;
 
-
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
-            
->>>>>>> 192fe8be3d89930e0347f92a86187b1a0f7b82ac
-=======
         case "postCoupon":
             http_response_code(200);
 
@@ -306,7 +290,6 @@ try {
             $res->message = "레벨 쿠폰 지금 성공";
             echo json_encode($res, JSON_NUMERIC_CHECK);
             break;
->>>>>>> 5e5d52175e56436b9844242ba6186ada7f331795
     }
 } catch (\Exception $e) {
     return getSQLErrorException($errorLogs, $e, $req);
