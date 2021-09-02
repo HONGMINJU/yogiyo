@@ -221,16 +221,8 @@ function isRestUser($id,$pw){
 
     return intval($res[0]["exist"]);
 }
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 
-// 회원가입
-function createUser($userEmail, $password, $nickName, $method, $phoneNum)
-{
-=======
 function getAdvertise(){
->>>>>>> 5e5d52175e56436b9844242ba6186ada7f331795
     $pdo = pdoSqlConnect();
     $query = "select adIdx, adImg from advertisement;";
 
@@ -262,10 +254,6 @@ function isMaster($userEmail){
     return intval($res[0]["exist"]);
 }
 
-<<<<<<< HEAD
->>>>>>> 192fe8be3d89930e0347f92a86187b1a0f7b82ac
-=======
-
 function postLevelCoupon(){
     $pdo = pdoSqlConnect();
     $query = "";
@@ -279,7 +267,7 @@ function postLevelCoupon(){
 
     return $res;
 }
->>>>>>> 5e5d52175e56436b9844242ba6186ada7f331795
+    
 // CREATE
 //    function addMaintenance($message){
 //        $pdo = pdoSqlConnect();
